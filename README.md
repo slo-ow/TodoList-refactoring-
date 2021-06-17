@@ -1,5 +1,7 @@
 # TodoList-refactoring-
 TodoList(refactoring) 연습
+## firebase 무료 호스팅 성공
+https://slow-todolist-web.web.app/
 ## firebase 연동 참고 사이트
 https://m.blog.naver.com/varkiry05/221202998292<br>
 https://rottk.tistory.com/entry/Firebase-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
