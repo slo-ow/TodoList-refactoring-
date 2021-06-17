@@ -1,5 +1,5 @@
 # TodoList-refactoring-
-## <href="https://www.boostcourse.org/cs124/joinLectures/52258">boostcourse</a> 에서 진행하는 '자바스크립트의 시작'을 수강 완료한 후 실습하는 미니 프로젝트 입니다.
+## <a href="https://www.boostcourse.org/cs124/joinLectures/52258">boostcourse</a> 에서 진행하는 '자바스크립트의 시작'을 수강 완료한 후 실습하는 미니 프로젝트 입니다.
 TodoList(refactoring) 연습
 ### firebase 무료 호스팅 성공
 https://slow-todolist-web.web.app/
