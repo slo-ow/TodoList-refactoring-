@@ -14,37 +14,26 @@
     <h2>My To-Do App</h2>
     <hr>
     <div class="input-group">
-      <input id="item" class="form-control" type="text" onkeyup="check_keyup()" placeholder="Input new todo">
-      <button id="newBtn" type="button" class="btn btn-info" onclick="check_click()">New Entry</button>
+      <input id="item" class="form-control" type="text" onkeyup="input_Enter()" placeholder="Input new todo">
+      <button id="newBtn" type="button" class="btn btn-info" onclick="addItem()">New Entry</button>
     </div>
     <hr>
     <ul id="todolist" class="list-group"></ul>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>
-      function check_keyup() {
-      var input_val = $('#item').val();
-      var Empty = "";
-      // 공백문자 확인
-      var check_speace = input_val.search(/\s/) != -1
-      // 이벤트 발생 후 내용이 비어있지 않을 경우에만 함수 호출
-      if (input_val.trim() !== Empty && window.event.keyCode == 13) {
-        console.log("엔터 입력 이벤트 발생");
-        addItem();
+    // 엔터키 이벤트 발생
+    function input_Enter(){
+      if(window.event.keyCode === 13){
+        return addItem();
       }
-    };
-    function check_click() {
-      var input_val = $('#item').val().trim();
-      var Empty = "";
-      // 공백문자 확인
-      var check_speace = input_val.search(/\s/) != -1
-      // 이벤트 발생 후 내용이 비어있지 않을 경우에만 함수 호출
-      if (input_val !== Empty) {
-        console.log("클릭 입력 이벤트 발생");
-        addItem();
-      }
-    };
+    }
+    // 요소 추가
     function addItem() {
+      if($('#item').val().trim().length < 1) {
+        alert('내용을 입력하세요');
+        return;
+      }
       // ul 요소 가져옴
       let list = document.getElementById('todolist');
       // input 요소 가져옴.
